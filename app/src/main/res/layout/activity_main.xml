@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <androidx.cardview.widget.CardView
+           style="@style/CategoryCardStyle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardBackgroundColor="#689f38"
+           android:id="@+id/card_numbers"
+           >
+       <TextView
+           style="@style/CategoryTextStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Learn Numbers">
+       </TextView>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           style="@style/CategoryCardStyle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardBackgroundColor="#FEB139"
+           android:id="@+id/card_family">
+           <TextView
+               style="@style/CategoryTextStyle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Learn Family Members">
+           </TextView>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           style="@style/CategoryCardStyle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardBackgroundColor="#325288"
+           android:id="@+id/card_colors">
+           <TextView
+               style="@style/CategoryTextStyle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Learn Colors">
+           </TextView>
+       </androidx.cardview.widget.CardView>
+   </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
